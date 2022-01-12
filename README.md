@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Source Code](https://github.com/waltersono/base-apparel-coming-soon-page)
-- Live Site URL: [View on Browser](https://waltersono.github.io/base-apparel-coming-soon-page/)
+- Solution URL: [Source Code](https://github.com/waltersono/calculator-app)
+- Live Site URL: [View on Browser](https://waltersono.github.io/calculator-app/)
 
 ## My process
 
