@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Spartan:700&display=swap" rel="stylesheet" />
+
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="src/css/style.css">
+  <!-- <link rel="stylesheet" href="src/css/debug.css"> -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.js"></script>
+  <script type="module" defer src="src/js/CalculatorController.js"></script>
+</head>
+
+<body class="default">
+
+  <div class="container">
+    <main class="calculator">
+      <header class="calculator__header">
+        <h1 class="calculator__title">calc</h1>
+        <div class="calculator__theme">
+          <label class="calculator__theme-label">Theme</label>
+          <div class="calculator__theme-controller">
+            <div class="calculator__theme-numbers">
+              <label for="theme1">1</label>
+              <label for="theme2">2</label>
+              <label for="theme3">3</label>
+            </div>
+            <div class="calculator__theme-toggler">
+              <div class="calculator__theme-pointer calculator__theme-pointer--1" id="theme1"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="calculator__display">
+        <input type="text" class="calculator__display-input" aria-label="Expression" placeholder="0">
+        <input type="number" class="calculator__display-result" aria-label="Result" disabled>
+      </section>
+
+      <section class="calculator__number-container">
+
+        <button type="button" class="calculator__btn calculator__btn--7">7</button>
+        <button type="button" class="calculator__btn calculator__btn--8">8</button>
+        <button type="button" class="calculator__btn calculator__btn--9">9</button>
+        <button type="button" class="calculator__btn calculator__btn--del">del</button>
+
+        <button type="button" class="calculator__btn calculator__btn--4">4</button>
+        <button type="button" class="calculator__btn calculator__btn--5">5</button>
+        <button type="button" class="calculator__btn calculator__btn--6">6</button>
+        <button type="button" class="calculator__btn calculator__btn--plus">+</button>
+
+        <button type="button" class="calculator__btn calculator__btn--1">1</button>
+        <button type="button" class="calculator__btn calculator__btn--2">2</button>
+        <button type="button" class="calculator__btn calculator__btn--3">3</button>
+        <button type="button" class="calculator__btn calculator__btn--minus">-</button>
+
+        <button type="button" class="calculator__btn calculator__btn--dot">.</button>
+        <button type="button" class="calculator__btn calculator__btn--0">0</button>
+        <button type="button" class="calculator__btn calculator__btn--divider">/</button>
+        <button type="button" class="calculator__btn calculator__btn--times">*</button>
+
+        <button type="button" class="calculator__btn calculator__btn--reset">reset</button>
+        <button type="button" class="calculator__btn calculator__btn--equal">=</button>
+
+      </section>
+    </main>
+  </div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a target="_blank" href="https://www.linkedin.com/in/waltersono">Walter Sono</a>.
+  </div>
+</body>
+
+</html>
